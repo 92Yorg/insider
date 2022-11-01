@@ -1,0 +1,23 @@
+<section class="page-layout page-slice u-tone-background-white" id="intro">
+	<div class="u-constrained u-constrained--skinny">
+		<h1>Learning</h1>
+        <object codetype="CMSInlineControl" style="display: none" type="Widget">
+			<param name="name" value="PostsByTag" />
+			<param name="Visible" value="True" />
+			<param name="HideOnSubPages" value="False" />
+			<param name="QueryName" value="CMS.BlogPost.BlogPostsByTagTop" />
+			<param name="SelectTopN" value="10" />
+			<param
+				name="WhereCondition"
+				value="ClassName+%3d+%27CMS.BlogPost%27+AND+a.NodeName+%3d+b.BlogPostTitle+AND+LOWER(a.DocumentTags)+LIKE+%27%252592Y+Insider%2525%27+AND+LOWER(a.DocumentTags)+LIKE+%27%2525Insider+Learning%2525%27"
+			/>
+			<param
+				name="TransformationName"
+				value="CMS.BlogPost.CMS.BlogPost.BlogListingV1BCtest"
+			/>
+			<param name="ResolveDynamicControls" value="True" />
+			<param name="widget_displayname" value="Posts+by+Tag" />
+			<param name="cms_type" value="widget" />
+		</object>
+	</div>
+</section>
