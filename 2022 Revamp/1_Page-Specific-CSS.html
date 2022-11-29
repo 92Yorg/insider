@@ -82,7 +82,12 @@
 	#insider-intro .email-signup__form {
 		background-color: var(--92nymagenta);
 		border: none;
-		padding: 0;
+		padding: 0 !important;
+	}
+
+	#insider-email .email-signup {
+		padding: 0 !important;
+		width: 100% !important;
 	}
 
 	.email-signup .email-collection__form {
@@ -101,32 +106,43 @@
 
 	@media (min-width: 50em) {
 		.email-collection__form {
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			align-items: center;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
-			justify-content: center;
+			-webkit-box-align: start;
+			-ms-flex-align: start;
+			align-items: start;
+			-webkit-box-pack: left;
+			-ms-flex-pack: left;
+			justify-content: left;
 		}
-	}
-
-	#insider-email .email-signup {
-		margin: -20px;
 	}
 
 	#insider-email .email-signup .email-collection__field {
 		border-bottom: none;
 		text-align: left;
+		margin: 0;
+    	padding: 0;
+	}
+
+	@media (min-width: 50em) {
+		#insider-email .email-signup .email-collection__field {
+			width: 100%!important;
+		}
 	}
 
 	.subscription-settings {
 		-webkit-box-pack: left;
 		-ms-flex-pack: left;
 		justify-content: left;
+		padding: 10px 0 20px;
 	}
 
-	.subscription-settings__label {
+	.subscription-settings__option {
+		padding: 0 10px 0 0;
+	}
+
+	.subscription-settings__option .subscription-settings__label {
 		color: #fff !important;
+		margin-left: 0;
+    	margin-right: 10px;
 	}
 
 	.email-collection__subscribe[type="submit"] {
@@ -148,6 +164,29 @@
 
 	.profile-panels h1 {
 		color: #fff;
+	}
+
+	.swiper-slide .profile-panel__description {
+		margin-bottom: .75em;
+	}
+
+	.swiper-slide .profile-panel__description {
+		display: block;
+		display: -webkit-box;
+		max-width: 400px;
+		height: 52.5px;
+		font-size: .875rem;
+		line-height: 1.25;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	@media (max-width: 29.99em) {
+		.profile-panel__description {
+			display: block!important;
+		}
 	}
 
     #insider-topics .profile-panel__title {
