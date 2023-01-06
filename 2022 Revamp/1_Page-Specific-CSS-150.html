@@ -1,0 +1,384 @@
+<style type="text/css">
+    :root {
+        --92nyblue: #8eaae2;
+        --92nygreen: #21805e;
+        --92nypink: #edabba;
+        --92nymagenta: #990d61;
+        --92nyred: #ff5447;
+    }
+
+    .hero-panel__header img {
+        width: 100%;
+        display: block;
+    }
+
+
+    #insider-intro h2,
+    #insider-topics h2,
+    #insider-recent-posts h2 {
+        font-size: 1.75rem;
+    }
+
+    @media (min-width: 50em) {
+
+        #insider-intro h2,
+        #insider-topics h2,
+        #insider-recent-posts h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .u-txt-uppercase {
+        text-transform: uppercase;
+    }
+
+    #insider-subs-hero {
+        background-color: var(--92nyred);
+        color: #fff;
+    }
+
+    @media (min-width: 40em) {
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+        }
+    }
+
+    .hero-feature__media {
+        padding: 10px 10px 0;
+    }
+
+    @media (min-width: 40em) {
+        .hero-feature__media {
+            padding: 0;
+            width: 74.5%;
+        }
+    }
+
+    .hero-feature__header {
+        max-width: 100%;
+    }
+
+    .hero-feature__header:before {
+        display: none;
+    }
+
+    @media (min-width: 50em) {
+        .hero-feature__header .o-grid__item {
+            margin-bottom: 0;
+        }
+    }
+
+    .hero-feature__header h3 {
+        font-size: 1.25rem;
+    }
+
+    @media (min-width: 40em) {
+        .hero-feature__header h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (min-width: 50em) {
+        .hero-feature__header h3 {
+            font-size: 2.125rem;
+        }
+    }
+
+
+    .hero-feature__body {
+        position: static;
+        align-items: end;
+        padding: 0 !important;
+    }
+
+    @media (min-width: 40em) {
+        .hero-feature__body {
+            width: 25%;
+        }
+    }
+
+    .hero-feature__header {
+        padding: 10px 10px 15px;
+    }
+
+    @media (min-width: 40em) {
+        .hero-feature__header {
+            padding: 0 15px;
+        }
+    }
+
+    @media (min-width: 60em) {
+        .hero-feature__header {
+            padding: 0 20px;
+        }
+    }
+
+    .hero-feature__header .btn,
+    .profile-panels .btn {
+        background-color: var(--92nyred);
+        color: #000;
+    }
+
+    .hero-feature__header .btn:hover,
+    .profile-panels .btn:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .btn--secondary {
+        border: none;
+    }
+
+    .blogpostsummary {
+        display: none;
+    }
+
+    #insider-intro {
+        background-color: #000;
+    }
+
+    .o-grid-checkered {
+        display: grid;
+    }
+
+    @media (min-width: 35em) {
+        .o-grid-checkered {
+            grid-template-columns: repeat(2, 50%);
+        }
+    }
+
+    .o-grid-checkered__item {
+        padding: 2em;
+    }
+
+    .o-grid-checkered__item:nth-child(2) {
+        background-color: var(--92nyred);
+    }
+
+    /* START EMAIL FORM STYLING */
+
+    #insider-email {
+        text-align: center;
+    }
+
+    @media (min-width: 35em) {
+        #insider-email {
+            text-align: left;
+        }
+    }
+
+    @media (min-width: 35em) {
+        .insider-intro-text {
+            text-align: right;
+            max-width: 520px;
+            margin-left: auto;
+        }
+    }
+
+    @media (min-width: 50em) {
+        .insider-intro-text p {
+            font-size: 18px;
+        }
+
+        .insider-intro-text p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    #insider-intro .email-signup__form {
+        background-color: var(--92nyred);
+        border: none;
+        padding: 0 !important;
+    }
+
+    #insider-email {
+        display: flex;
+        align-items: center;
+    }
+
+    #insider-email .email-signup {
+        padding: 0 !important;
+        margin: 0;
+        width: 100% !important;
+    }
+
+    #insider-intro .email-signup .email-collection__form {
+        justify-content: center;
+        text-align: center;
+    }
+
+    @media (min-width: 35em) {
+        #insider-intro .email-signup .email-collection__form {
+            justify-content: left;
+            text-align: left;
+        }
+    }
+
+    .email-collection__form {
+        -webkit-box-align: left;
+        -ms-flex-align: left;
+        align-items: left;
+        -webkit-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left;
+    }
+
+    @media (min-width: 50em) {
+        .email-collection__form {
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: start;
+            -webkit-box-pack: left;
+            -ms-flex-pack: left;
+            justify-content: left;
+        }
+    }
+
+    #insider-email .email-signup .email-collection__field {
+        border-bottom: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media (min-width: 35em) {
+        #insider-email .email-signup .email-collection__field {
+            text-align: left;
+        }
+    }
+
+    @media (min-width: 50em) {
+        #insider-email .email-signup .email-collection__field {
+            width: 100% !important;
+        }
+    }
+
+    @media (max-width: 49.99em) {
+        .email-collection__subscribe[type="submit"] {
+            width: auto;
+        }
+    }
+
+    .subscription-settings {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 10px 0 20px;
+    }
+
+    @media (min-width: 35em) {
+        .subscription-settings {
+            -webkit-box-pack: left;
+            -ms-flex-pack: left;
+            justify-content: left;
+        }
+    }
+
+    .subscription-settings__option {
+        padding: 0 10px 0 0;
+    }
+
+    .subscription-settings__option .subscription-settings__label {
+        color: #000 !important;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .email-collection__subscribe[type="submit"] {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .email-collection__subscribe[type="submit"]:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    /* END EMAIL FORM STYLING */
+
+    h1.ff-display {
+        font-size: 3em;
+    }
+
+    @media (min-width: 50em) {
+        h1.ff-display {
+            font-size: 4em;
+        }
+    }
+
+    .profile-panels h1 {
+        color: #fff;
+    }
+
+    @media (min-width: 50em) {
+        .swiper-slide .profile-panel__description {
+            font-size: 1rem;
+        }
+    }
+
+    @media (min-width: 56.25em) {
+        .swiper-container.profile-panels__inner {
+            max-width: 1300px;
+        }
+    }
+
+
+    /* Topics */
+
+    #insider-topics .swiper-slide .profile-panel {
+        padding: 20px;
+    }
+
+    #insider-topics .swiper-slide .profile-panel__description {
+        height: auto;
+        -webkit-line-clamp: unset;
+    }
+
+    @media (max-width: 29.99em) {
+        .profile-panel__description {
+            display: block !important;
+        }
+    }
+
+
+    /* Topics - 150 Version */
+
+    #insider-topics .profile-panel__title {
+        color: var(--92nyred);
+        font-size: 2rem;
+    }
+
+
+    /* Recent Posts */
+
+    #insider-recent-posts .swiper-slide .profile-panel__description {
+        display: block;
+        display: -webkit-box;
+        max-width: 400px;
+        height: 52.5px;
+        font-size: 0.875rem;
+        line-height: 1.25;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0.75em;
+    }
+
+
+    /* Recent Posts - 150 version */
+
+    #insider-recent-posts .profile-panels {
+        background-color: #fff;
+    }
+
+    #insider-recent-posts .profile-panels__title {
+        color: #000;
+    }
+
+    #insider-recent-posts .profile-panel {
+        border-right: 1px #000 solid;
+    }
+</style>
