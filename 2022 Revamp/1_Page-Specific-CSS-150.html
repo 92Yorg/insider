@@ -6,15 +6,20 @@
         --92nymagenta: #990d61;
         --92nyred: #ff5447;
     }
+    @media (min-width: 50em) {
+        .insider-heroes {
+            display: flex;
+        }
+    }
 
-	.hero-panel__inner {
-		max-width: 1080px;
-    	margin: 0 auto;
-	}
+    .hero-panel__inner {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
 
-	.hero-panel__header a {
-		display: block;
-	}
+    .hero-panel__header a {
+        display: block;
+    }
 
     .hero-panel__header img {
         width: 100%;
@@ -22,13 +27,14 @@
     }
 
     @media (max-width: 1080px) {
-		#insider-subs-hero {
-			overflow: hidden;
-		}
-		.hero-panel__header img {
-			width: 105%;
-		}
-	}
+        #insider-subs-hero {
+            overflow: hidden;
+        }
+
+        .hero-panel__header img {
+            width: 105%;
+        }
+    }
 
 
     #insider-intro h2,
@@ -55,14 +61,12 @@
         color: #fff;
     }
 
-
-    /* Hero Feature */
-
-    @media (min-width: 40em) {
+    @media (min-width: 50em) {
         .hero-feature {
             display: flex;
             align-items: center;
-            padding: 15px 0;
+            padding: 15px 15px 15px 0;
+            width: 75%;
         }
     }
 
@@ -70,202 +74,77 @@
         padding: 10px 10px 0;
     }
 
-    @media (min-width: 40em) {
+    @media (min-width: 50em) {
         .hero-feature .hero-feature__media {
             padding: 0;
             width: 74.5%;
         }
     }
 
-    .hero-feature .hero-feature__header {
+    .hero-feature__header {
         max-width: 100%;
     }
 
-    .hero-feature .hero-feature__header:before {
+    .hero-feature__header:before {
         display: none;
     }
 
     @media (min-width: 50em) {
-        .hero-feature .hero-feature__header .o-grid__item {
+        .hero-feature__header .o-grid__item {
             margin-bottom: 0;
         }
     }
 
-    .hero-feature .hero-feature__header h3 {
+    .hero-feature__header h3 {
         font-size: 1.25rem;
     }
 
-    @media (min-width: 40em) {
-        .hero-feature .hero-feature__header h3 {
-            font-size: 1.5rem;
+    @media (min-width: 62.5em) {
+        .hero-feature__header h3 {
+            font-size: 1.625rem;
         }
     }
 
-    @media (min-width: 50em) {
-        .hero-feature .hero-feature__header h3 {
+    @media (min-width: 80em) {
+        .hero-feature__header h3 {
             font-size: 2.125rem;
         }
     }
 
+
     .hero-feature .hero-feature__body {
         position: static;
-        align-items: end;
         padding: 0 !important;
     }
 
-    @media (min-width: 40em) {
+    @media (min-width: 50em) {
         .hero-feature .hero-feature__body {
             width: 25%;
         }
     }
 
-    .hero-feature .hero-feature__header {
+    .hero-feature__header {
         padding: 10px 10px 15px;
     }
 
-    @media (min-width: 40em) {
-        .hero-feature .hero-feature__header {
+    @media (min-width: 50em) {
+        .hero-feature__header {
             padding: 0 15px;
+            background-color: transparent;
         }
-    }
-
-    @media (min-width: 60em) {
-        .hero-feature .hero-feature__header {
-            padding: 0 20px;
-        }
-    }
-
-
-    /* 150 Feature */
-
-    @media (min-width: 40em) {
-        .feature-150 {
-            display: flex;
-            align-items: center;
-            padding: 15px 0;
-            flex-direction: row-reverse;
-        }
-    }
-
-    .feature-150 .hero-feature__media {
-        padding: 10px 10px 0;
-    }
-
-    @media (min-width: 40em) {
-        .feature-150 .hero-feature__media {
-            padding: 0;
-            width: 59.5%;
-        }
-    }
-
-    .feature-150 .hero-feature__header {
-        max-width: 100%;
-    }
-
-    .feature-150 .hero-feature__header:before {
-        display: none;
-    }
-
-    @media (min-width: 50em) {
-        .feature-150 .hero-feature__header .o-grid__item {
-            margin-bottom: 0;
-        }
-    }
-
-    .feature-150 .hero-feature__header h3 {
-        font-size: 1.25rem;
-    }
-
-    @media (min-width: 50em) {
-        .feature-150 .hero-feature__header h3 {
-            font-size: 1.75rem;
-        }
-    }
-
-    @media (min-width: 50em) {
-        .feature-150 .hero-feature__header h4 {
-            font-size: 1.25rem;
-        }
-    }
-
-    .feature-150 .hero-feature__year {
-        font-size: 3rem;
-        font-weight: 400;
-        -webkit-font-smoothing: antialiased;
-        font-family: "92NY Subhead",Didot,Georgia,serif;
-        line-height: .91;
-        margin: 0;
-    }
-
-    @media (min-width: 50em) {
-        .feature-150 .hero-feature__year {
-            font-size: 4rem;
-        }
-    }
-
-    .feature-150 .hero-feature__body {
-        position: static;
-        align-items: end;
-        padding: 0 !important;
-    }
-
-    @media (min-width: 40em) {
-        .feature-150 .hero-feature__body {
-            width: 40%;
-        }
-    }
-
-    .feature-150 .hero-feature__header {
-        padding: 10px 10px 15px;
-    }
-
-    @media (min-width: 40em) {
-        .feature-150 .hero-feature__header {
-            padding: 0 15px;
-        }
-    }
-
-    @media (min-width: 60em) {
-        .feature-150 .hero-feature__header {
-            padding: 0 20px;
-        }
-    }
-
-    .blog-title-prefix-1 {
-        font-size: 1.5rem;
-        line-height: .91;
-        text-transform: uppercase;
-        font-family: "92NY Text",Didot,Georgia,serif;
-    }
-
-    @media (min-width: 50em) {
-        .blog-title-prefix-1 {
-            font-size: 2rem;
-        }
-    }
-
-    @media (min-width: 62.5em) {
-        .blog-title-prefix-1 {
-            font-size: 2.5rem;
-        }
-    }
-
-    .blog-title-prefix-2 {
-        line-height: 1.1;
-        margin-bottom: 1em;
     }
 
     .hero-feature__header .btn,
-	.profile-panels .btn {
-		background-color: var(--92nyred);
-		color: #000;
-	}
+    .profile-panels .btn {
+        background-color: var(--92nyred);
+        color: #000;
+    }
 
-	.hero-feature__header .btn:hover,
-	.profile-panels .btn:hover {
-		background-color: #000;
-		color: #fff;
-	}
+    .hero-feature__header .btn:hover,
+    .profile-panels .btn:hover {
+        background-color: #000;
+        color: #fff;
+    }
 
     .btn--secondary {
         border: none;
@@ -471,6 +350,11 @@
         padding: 20px;
     }
 
+    #insider-topics .profile-panel__title {
+        color: var(--92nyred);
+        font-size: 2rem;
+    }
+
     #insider-topics .swiper-slide .profile-panel__description {
         height: auto;
         -webkit-line-clamp: unset;
@@ -480,30 +364,6 @@
         .profile-panel__description {
             display: block !important;
         }
-    }
-
-
-    /* Topics - 150 Version */
-
-    #insider-topics .profile-panels {
-        background-color: #fff;
-    }
-
-	#insider-topics .profile-panels__title {
-		color: #000;
-	}
-    
-    #insider-topics .swiper-slide .profile-panel {
-        background-color: var(--92nyred);
-    }
-    
-    #insider-topics .profile-panel__title {
-        color: #000;
-        font-size: 2rem;
-    }
-
-    #insider-topics .profile-panel__content {
-        color: #000;
     }
 
 
@@ -523,28 +383,60 @@
         margin-bottom: 0.75em;
     }
 
-
-    /* Recent Posts - 150 version */
-
     #insider-recent-posts .profile-panels {
-        background-color: #000;
-    }
-
-    #insider-recent-posts .profile-panel {
-        border-right: 1px #fff solid;
-        background-color: #000;
+        background-color: #fff;
     }
 
     #insider-recent-posts .profile-panels__title {
+        color: #000;
+    }
+
+    #insider-recent-posts .profile-panel {
+        border-right: 1px #000 solid;
+    }
+
+
+    /* 150 Feature */
+
+    .feature-150 {
+        background: #000;
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    @media (min-width: 50em) {
+        .feature-150 {
+            width: 25%;
+        }
+    }
+
+    .feature-150 .hero-feature__body {
+        position: static;
+        align-items: unset;
+        padding: 0 !important;
+    }
+
+    .feature-150 .hero-feature__header {
+        max-width: 100%;
+        padding: 15px 0 0;
+        background: transparent;
         color: #fff;
     }
 
-    #insider-recent-posts .profile-panel__content {
-        color: #fff;
+    .feature-150 .hero-feature__header:before {
+        display: none;
     }
 
-    #insider-recent-posts .profile-panels .btn:hover {
-		background-color: #fff;
-		color: #000;
-	}
+    .feature-150 .hero-feature__header h3 {
+        font-size: 1.25rem;
+    }
+
+    .feature-150 .hero-feature__year {
+        font-size: 3rem;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        font-family: "92NY Subhead",Didot,Georgia,serif;
+        line-height: .91;
+        margin: 0;
+    }
 </style>
