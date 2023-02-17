@@ -404,7 +404,7 @@
 
 	.logo-150 img {
 		display: block;
-		width: 60%;
+		width: 45%;
     	max-width: 150px;
 		margin-bottom: .75em;
 	}
@@ -428,12 +428,18 @@
 	} */
 
 	.feature-150--prefix-1 {
-		font-size: 10vw;
+		font-size: 19vw;
+	}
+
+	@media (min-width: 30em) {
+		.feature-150--prefix-1 {
+			font-size: 11vw;
+		}
 	}
 
 	@media (min-width: 50em) {
 		.feature-150--prefix-1 {
-			font-size: 2.625vw;
+			font-size: 4vw;
 		}
 	}
 
@@ -457,6 +463,14 @@
 			font-size: 1.75vw;
 		}
 	}
+
+	@media (min-width: 90em) {
+		.feature-150 .blog-title-prefix-1 {
+			font-size: 1.25vw;
+		}
+	}
+
+	
 
 	.feature-150 .hero-feature__year {
 		font-size: 3rem;
