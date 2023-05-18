@@ -101,13 +101,13 @@
 				</p>
 				<object codetype="CMSInlineControl" style="display: none" type="widget">
 					<param name="showunsubscribe" value="False" />
-					<param name="container" value="div_EmailPreferencesWrapper" />
+					<param name="name" value="EmailSignupWidget" />
 					<param name="useupdatepanel" value="False" />
 					<param name="listname" value="AtHome" />
 					<param name="visible" value="True" />
 					<param name="hideonsubpages" value="False" />
 					<param name="calltoaction" value="++" />
-					<param name="name" value="EmailSignupWidget" />
+					<param name="container" value="div_EmailPreferencesWrapper" />
 					<param name="widget_displayname" value="Email+Signup+Widget" />
 					<param name="width" value="" />
 					<param name="height" value="" />
@@ -118,32 +118,31 @@
 </section>
 
 <section id="insider-recent-posts">
-	<object codetype="CMSInlineControl" style="display: none" type="widget">
-		<param name="mediapanelgallery" value="False" />
-		<param name="profilepanelslidesperview" value="3" />
-		<param name="profilepanelinverted" value="False" />
-		<param name="itemcontainertype" value="profile-panel" />
-		<param name="navigationgridinverted" value="False" />
-		<param name="widget_displayname" value="Item+Container+(v2)" />
-		<param name="slidermobile" value="False" />
-		<param name="ogridcols" value="o-grid--2up" />
-		<param name="infocardgridgrey" value="False" />
-		<param name="itemcontainertitle" value="Explore+Recent+Posts" />
-		<param
-			name="itemcontainercontent"
-			value="%7b%5ewidget%7c(transformationname)CMS.BlogPost.CMS.BlogPost.BlogListingV2ProfilePanelBC%7c(selecttopn)3%7c(name)PostsByTag%7c(visible)True%7c(hideonsubpages)False%7c(widget_displayname)Posts%2bby%2bTag%7c(queryname)CMS.BlogPost.BlogPostsByTagTop%7c(resolvedynamiccontrols)True%7c(wherecondition)ClassName%2b%25253d%2b%252527CMS.BlogPost%252527%2bAND%2ba.NodeName%2b%25253d%2bb.BlogPostTitle%2bAND%2bLOWER(a.DocumentTags)%2bLIKE%2b%252527%2525252592Y%2bInsider%25252525%252527%7c(width)%7c(height)%5e%7d"
-		/>
-		<param name="profilepanelbasic" value="False" />
-		<param name="mediapanelslider" value="False" />
-		<param name="mediapaneldisableimageclick" value="False" />
-		<param name="mediapanellogo" value="False" />
-		<param name="slideritemsingle" value="False" />
-		<param name="mediapanelsinglerow" value="False" />
-		<param name="visible" value="True" />
-		<param name="hideonsubpages" value="False" />
+	<object codetype="CMSInlineControl" style="display: none" type="Widget">
 		<param name="name" value="ItemContainer_v2" />
-		<param name="width" value="" />
-		<param name="height" value="" />
+		<param name="Visible" value="True" />
+		<param name="HideOnSubPages" value="False" />
+		<param name="ItemContainerType" value="profile-panel" />
+		<param name="InfoCardGridGrey" value="False" />
+		<param name="OGridCols" value="o-grid--2up" />
+		<param name="NavigationGridInverted" value="False" />
+		<param name="MediaPanelLogo" value="False" />
+		<param name="ItemContainerTitle" value="Explore+Recent+Posts" />
+		<param name="MediaPanelSingleRow" value="False" />
+		<param name="MediaPanelSlider" value="False" />
+		<param name="SliderItemSingle" value="False" />
+		<param name="SliderMobile" value="False" />
+		<param name="MediaPanelGallery" value="False" />
+		<param name="MediaPanelDisableImageClick" value="False" />
+		<param name="ProfilePanelInverted" value="False" />
+		<param name="ProfilePanelBasic" value="False" />
+		<param name="ProfilePanelSlidesPerView" value="3" />
+		<param
+			name="ItemContainerContent"
+			value="%7b%5ewidget%7c(name)PostsByTag%7c(Visible)True%7c(HideOnSubPages)False%7c(QueryName)CMS.BlogPost.BlogPostsByTagTop%7c(SelectTopN)6%7c(WhereCondition)ClassName%2b%25253d%2b%252527CMS.BlogPost%252527%2bAND%2ba.NodeName%2b%25253d%2bb.BlogPostTitle%2bAND%2bLOWER(a.DocumentTags)%2bLIKE%2b%252527%2525252592Y%2bInsider%25252525%252527%7c(TransformationName)CMS.BlogPost.CMS.BlogPost.BlogListingV2ProfilePanelBC%7c(ResolveDynamicControls)True%7c(widget_displayname)Posts%2bby%2bTag%5e%7d"
+		/>
+		<param name="widget_displayname" value="Item+Container+(v2)" />
+		<param name="cms_type" value="widget" />
 	</object>
 </section>
 
@@ -151,7 +150,7 @@
 	<object codetype="CMSInlineControl" style="display: none" type="widget">
 		<param name="mediapanelgallery" value="False" />
 		<param name="profilepanelslidesperview" value="3" />
-		<param name="profilepanelinverted" value="False" />
+		<param name="profilepanelbasic" value="False" />
 		<param name="itemcontainertype" value="profile-panel" />
 		<param name="navigationgridinverted" value="False" />
 		<param name="widget_displayname" value="Item+Container+(v2)" />
@@ -163,7 +162,7 @@
 			name="itemcontainercontent"
 			value="%3cdiv+class%3d%22profile-panel+js-slider-panel+js-profile-panel%22%3e%0d%0a++++%3cdiv+class%3d%22profile-panel__content+js-has-popup%22%3e%0d%0a++++++++%3cdiv+class%3d%22profile-panel__body%22%3e%0d%0a++++++++++++%3ch3+class%3d%22profile-panel__title+ff-display+ff-display--text%22%3e%3ca+href%3d%22%7e%2finsider%2fculture%22%3eCulture%3c%2fa%3e%3c%2fh3%3e%0d%0a++++++++++++%3cdiv+class%3d%22profile-panel__description%22%3e%0d%0a++++++++++++++++%3cp%3eMovers+and+shakers+in+film%2c+books%2c+music%2c+art%2c+theater%2c+music%2c+entertainment%2c+fashion%3c%2fp%3e%0d%0a++++++++++++%3c%2fdiv%3e%0d%0a++++++++%3c%2fdiv%3e%0d%0a++++%3c%2fdiv%3e%0d%0a%3c%2fdiv%3e%0d%0a%3cdiv+class%3d%22profile-panel+js-slider-panel+js-profile-panel%22%3e%0d%0a++++%3cdiv+class%3d%22profile-panel__content+js-has-popup%22%3e%0d%0a++++++++%3cdiv+class%3d%22profile-panel__body%22%3e%0d%0a++++++++++++%3ch3+class%3d%22profile-panel__title+ff-display+ff-display--text%22%3e%3ca+href%3d%22%7e%2finsider%2flifestyle%22%3eLifestyle%3c%2fa%3e%3c%2fh3%3e%0d%0a++++++++++++%3cdiv+class%3d%22profile-panel__description%22%3e%0d%0a++++++++++++++++%3cp%3eFood+%26+wine%2c+travel%2c+family%2c+money%2c+nature%2c+health%2c+wellness%3c%2fp%3e%0d%0a++++++++++++%3c%2fdiv%3e%0d%0a++++++++%3c%2fdiv%3e%0d%0a++++%3c%2fdiv%3e%0d%0a%3c%2fdiv%3e%0d%0a%3cdiv+class%3d%22profile-panel+js-slider-panel+js-profile-panel%22%3e%0d%0a++++%3cdiv+class%3d%22profile-panel__content+js-has-popup%22%3e%0d%0a++++++++%3cdiv+class%3d%22profile-panel__body%22%3e%0d%0a++++++++++++%3ch3+class%3d%22profile-panel__title+ff-display+ff-display--text%22%3e%3ca+href%3d%22%7e%2finsider%2fnews-and-politics%22%3eNews+%26amp%3b+Politics%3c%2fa%3e%3c%2fh3%3e%0d%0a++++++++++++%3cdiv+class%3d%22profile-panel__description%22%3e%0d%0a++++++++++++++++%3cp%3eExpert+analysis+and+insights+on+current+events%3c%2fp%3e%0d%0a++++++++++++%3c%2fdiv%3e%0d%0a++++++++%3c%2fdiv%3e%0d%0a++++%3c%2fdiv%3e%0d%0a%3c%2fdiv%3e%0d%0a%3cdiv+class%3d%22profile-panel+js-slider-panel+js-profile-panel%22%3e%0d%0a++++%3cdiv+class%3d%22profile-panel__content+js-has-popup%22%3e%0d%0a++++++++%3cdiv+class%3d%22profile-panel__body%22%3e%0d%0a++++++++++++%3ch3+class%3d%22profile-panel__title+ff-display+ff-display--text%22%3e%3ca+href%3d%22%7e%2finsider%2flearning%22%3eLearning%3c%2fa%3e%3c%2fh3%3e%0d%0a++++++++++++%3cdiv+class%3d%22profile-panel__description%22%3e%0d%0a++++++++++++++++%3cp%3eIn-depth+conversations+with+experts+leading+classes+at+92NY+and+Roundtable%3c%2fp%3e%0d%0a++++++++++++%3c%2fdiv%3e%0d%0a++++++++%3c%2fdiv%3e%0d%0a++++%3c%2fdiv%3e%0d%0a%3c%2fdiv%3e%0d%0a%3cdiv+class%3d%22profile-panel+js-slider-panel+js-profile-panel%22%3e%0d%0a++++%3cdiv+class%3d%22profile-panel__content+js-has-popup%22%3e%0d%0a++++++++%3cdiv+class%3d%22profile-panel__body%22%3e%0d%0a++++++++++++%3ch3+class%3d%22profile-panel__title+ff-display+ff-display--text%22%3e%3ca+href%3d%22%7e%2finsider%2finspiration%22%3eInspiration%3c%2fa%3e%3c%2fh3%3e%0d%0a++++++++++++%3cdiv+class%3d%22profile-panel__description%22%3e%0d%0a++++++++++++++++%3cp%3eJewish+wisdom%2c+big+ideas%2c+food+for+thought%3c%2fp%3e%0d%0a++++++++++++%3c%2fdiv%3e%0d%0a++++++++%3c%2fdiv%3e%0d%0a++++%3c%2fdiv%3e%0d%0a%3c%2fdiv%3e"
 		/>
-		<param name="profilepanelbasic" value="False" />
+		<param name="profilepanelinverted" value="False" />
 		<param name="mediapanelslider" value="False" />
 		<param name="profilepaneladditionalslides" value="2" />
 		<param name="mediapaneldisableimageclick" value="False" />
